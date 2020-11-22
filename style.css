@@ -142,7 +142,7 @@ body {
 
 /* main */
 #background {
-  background-image: url("https://raw.githubusercontent.com/Minhnguyen1012/Dripbin/main/photo-based.png");
+  background-image: url("img/photo-based.png");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
