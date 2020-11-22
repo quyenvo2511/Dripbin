@@ -63,6 +63,20 @@ function init() {
       getImagesFromSearch(url);
     }
   });
+
+  // For each badge in the navbar, when the user clicks on the badge
+  // Perform a search using the value of the badge as the search keyword
+  let navItems = document.getElementsByClassName("badge");
+  for (let i = 0; i < navItems.length; i++) {
+    navItems[i].addEventListener("click", () => {
+      let value = navItems[i].innerHTML;
+      let query = value;
+      console.log(query);
+      let url = `https://api.unsplash.com/search/photos/?client_id=GLo6me33mAPbPck0jI0XyLEfe4dbvkgjF9kTytMGDQ0&query=${query}&per_page=30`;
+
+      getImagesFromSearch(url);
+    });
+  }
 }
 
 window.onload = init;
