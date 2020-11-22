@@ -14,7 +14,10 @@ body {
   border: 1px;
   margin: 5px 20px 0px 10px;
 }
-
+.fixed-top {
+  background-color: white;
+  padding-bottom: 10px;
+}
 .navbar {
   position: relative;
   display: flex;
@@ -145,8 +148,9 @@ body {
   background-size: cover;
   width: 100vw;
   height: 60vh;
+
   /* overflow: hidden; */
-  margin-top: 20px;
+  margin-top: 10rem;
   position: relative;
 }
 #background .search-box {
@@ -158,21 +162,23 @@ body {
   display: flex;
 }
 .form-control {
-  width: 20vh;
+  width: 10vw;
   background-color: whitesmoke;
   border: none;
-  font-size: 16px;
+  outline-style: hidden;
+  font-size: px;
   border-radius: 20px;
 }
 /*  */
 .search-box {
   width: 60vw;
-  height: 45px;
+  height: 70vw;
   padding: 5px 8px 0 14px;
-  border-radius: 10px;
+  border-radius: 17px;
   border: 1px solid lightgray;
   display: flex;
   align-items: stretch;
+  /* box-shadow: 3px 3px 3px rgb(167, 164, 164); */
 }
 .search-input {
   flex-grow: 1;
@@ -187,6 +193,7 @@ body {
 }
 .nav-2 {
   margin-top: 15px;
+  padding-left: 20vw;
 }
 
 /* mansory conatainer */
@@ -237,6 +244,36 @@ body {
 }
 .item img {
   max-width: 100%;
+}
+.footers {
+  position: relative;
+  font-size: 12px;
+  height: 12vh;
+  padding-top: 15px;
+  background-color: rgb(245, 245, 245);
+  text-decoration: none;
+  font-weight: 600;
+}
+.ig {
+  position: absolute;
+  align-content: center;
+  bottom: 8px;
+}
+.FB {
+  padding-right: 20px;
+  color: #555555;
+}
+
+.search-box {
+  background-color: white;
+  width: 60vw;
+  height: 45px;
+  padding: 5px 8px 0px 14px;
+  border-radius: 30px;
+  border: 1px solid lightgrey;
+
+  display: flex;
+  align-items: stretch;
 }
 
 @media only screen and (min-width: 400px) {
