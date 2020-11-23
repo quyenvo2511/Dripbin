@@ -65,12 +65,18 @@
     <main>
       <div id="background">
         <div class="search-box">
-          <svg
+          <!-- <svg
             focusable="false"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-          ></svg>
-          <input id="search-bar" type="text" name="q" class="search-input" />
+          ></svg> -->
+          <input
+            id="search-bar"
+            type="text"
+            name="q"
+            placeholder="Search..."
+            class="search-input"
+          />
           <select id="inputState" class="form-control">
             <option selected>Shot</option>
             <option>...</option>
@@ -78,7 +84,7 @@
         </div>
       </div>
     </main>
-    <div class="container"><div class="masonry" id="hold"></div></div>
+    <div class="photo-grid"><div class="masonry" id="hold"></div></div>
     <footer class="d-flex justify-content-around footers">
       <a href="">FAQ</a>
       <a href="">RETURN</a>

@@ -3,7 +3,7 @@ const BASE_URL = "https://api.unsplash.com/photos/?";
 const PER_PAGE = "30";
 
 const defaultURL =
-  "https://api.unsplash.com/photos/?client_id=GLo6me33mAPbPck0jI0XyLEfe4dbvkgjF9kTytMGDQ0&per_page=30";
+  "https://api.unsplash.com/photos/random?client_id=GLo6me33mAPbPck0jI0XyLEfe4dbvkgjF9kTytMGDQ0&count=30";
 
 // This function will fetch some images base on the given url
 function getImagesFromSearch(url) {
@@ -27,6 +27,17 @@ function getImagesFromSearch(url) {
       console.log(error);
     });
 }
+// const getApi=async()=>{
+
+//  try {
+//   let response= await fetch(url)
+//   let data= await data.json()
+//   let newHtml = data.map()
+//   document.
+//  } catch (error) {
+//    console(error)
+//  }
+// }
 
 // This function will fetch some random images when the page first is started
 // Therefore, we don't need any query parameter here in the URL
